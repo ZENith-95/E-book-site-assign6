@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+:root{
+    --primary-clr: #644f0e;
+    --secondary-clr: #52451e;
+    --highlight-clr: #ffc107;
+    --text-black: #ffffff;
+    --text-white: #fff;
+    --background: #1d0101;
+}
+
+body , html{
+    background-color: var(--background);
+}
+
+#main{
+    padding: 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background); 
+    width: 100%;  
+    min-height: 100vh;
+}
+
+#main #nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: var(--primary-clr);
+    height: 5rem;
+    margin-top: 4rem;
+    border-radius: 2.5rem;
+    z-index: 9999;
+}
+
+#nav .nav-left{
+    display: flex;
+    width: 85%;
+    justify-content: flex-start;
+    gap: 3em;
+}
+
+#nav .nav-left .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12%;
+}
+
+#nav .nav-left .logo .logo-image{
+    background-color: white;
+    margin: .6rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav .nav-left .logo .logo-image img{
+ height: 60%;
+ width: 50%;
+}
+
+#nav .nav-left .logo .logo-text{
+    color: var(--text-white);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#nav .nav-left .nav-list{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+#nav .nav-list ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+#nav .nav-list ul li{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    width: fit-content;
+    height: 90%;
+}
+
+#nav .nav-list ul li a:hover{
+    color: var(--highlight-clr);
+    transform: scale(1.15);
+    transition: .3s ;
+}
+
+#nav .nav-list ul li:first-child {
+    border-bottom: 4px solid var(--highlight-clr);
+    border-radius: 2px;
+}
+
+#nav .nav-list ul li a{
+    text-decoration: none;
+    color: var(--text-white);
+    font-weight: 700;
+}
+
+#nav .get-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    height: 70%;
+    width: 10%;
+    margin: .6em;
+    border-radius: 2.5em;
+    color: var(--text-black);
+    animation: border 7s infinite ;
+}
+
+#nav .get-app:hover{
+    background-color: var(--highlight-clr);
+}
+
+#nav .get-app a{
+    color: var(--text-black);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#main .content-top{
+    margin-top: 10rem ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--background);
+    padding: 1rem;
+    width: 100%;
+}
+
+#main .content-top #content{
+    width: 100%;
+    padding: 5rem 0;
+    color: var(--text-black);
+    position: relative;
+}
+
+#main .content-top #content .sub-head{
+    display: flex;
+    align-content: center;
+    font-size: 1.5rem;
+    gap: .5rem;
+    padding: 3rem 0;
+}
+
+#main .content-top #content .sub-head span{
+    width: 3rem;
+    height: 80%;
+    padding-top: .2rem;
+}
+
+#main .content-top #content .sub-head span img{
+    width: 100%;
+    height: 100%;
+}
+
+#main .content-top #content .main-head{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+
+#main .content-top #content .main-head h1{
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+#main .content-top #content .main-head h1 span{
+    color: var(--primary-clr);
+    font-weight: 700;
+}
+
+#main .content-top #content .para{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+#main .content-top #content .dl-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 2rem 0;
+}
+
+#main .content-top #content .dl-btn .btn{
+    background-color: var(--primary-clr);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 18rem;
+    height: 4.5rem;
+    padding: .5rem rem;
+    border-radius: .5rem;
+    z-index: 3;
+}
+
+#main .content-top #content .dl-btn .btn img{
+    width: 100%;
+    height: 100%;
+}
+
+#main .content-top #content .dl-btn .btn .app-store-logo, .play-logo{
+    height: 3rem;
+    width: 2.7rem;
+}
+
+#main .content-top #content .dl-btn .btn .app-store-text, .play-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3em;
+    color: var(--text-white);
+}
+
+#main .content-top #content .dl-btn .btn p{
+    font-size: 1rem;
+}
+
+#main .content-top #content .dl-btn .btn h5{
+    font-size: 1.2rem;
+}
+
+#main .content-top #content .dl-btn .google-play-btn{
+    background-color: black;
+    
+}
+
+#main .content-top #content .dl-btn .btn:hover{
+    border: .4rem solid var(--highlight-clr);
+    animation: border 2s ease-in infinite ;
+}
+
+#main .content-top #content .testimonial{
+    display: flex;
+    width: 80%;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#main .content-top #content .testimonial .img-list ul{
+    display: grid;
+    list-style: none;
+    width: fit-content;
+    height: 3rem;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#main .content-top #content .testimonial .img-list ul li{
+    width: 6rem ;
+    height: 3rem;
+    margin: -1rem ;
+}
+
+#main .content-top #content .testimonial .img-list ul li img{
+    width: 100%;
+}
+
+#main .content-top #content .testimonial .users{
+    margin-left: 2rem;
+    justify-self: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: .9rem;
+}
+
+#main .content-top #content .testimonial .users h5 ,#main .content-top #content .testimonial .users p{
+    font-size: 1.3rem;
+}
+
+#main .content-top #content .plane{
+width: 17rem;
+height: 30rem;
+transform: rotate(20.002deg);
+position: absolute;
+right: 11rem;
+bottom: -1rem;
+padding: 0 2rem 0 0rem;
+}
+
+#main .content-top #content .plane img{
+    width: 200%;
+    height: 100%;
+    transform: rotate(340deg);
+
+}
+
+#main .content-top #hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: min-content;
+    padding: 3rem ;
+}
+
+#hero .sub-hero{
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .main-hero{
+    position: absolute;
+    right: 6rem;
+}
+
+#hero .sub-hero img {
+    width: 100%;
+    margin-left: -3px;
+    border-radius: 8.3rem;
+}
+
+#hero .main-hero img{
+    width: 100%;
+    border-radius: 2.5rem;
+}
+
+#main .content-bottom{
+    background-color: var(--secondary-clr);
+    width: 105%;
+    height: 34rem;
+    display: grid;
+    grid-template-columns: repeat(2,40% 55%);
+    padding: 4rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+    gap: 4%;
+    /* transition: 5s; */
+}
+
+#main .content-bottom .download-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--text-white);
+}
+
+#main .content-bottom .download-text .download-text-top{
+    width: 100%;
+}
+
+#main .content-bottom .download-text .download-text-top h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+#main .content-bottom .download-text .download-text-top p{
+    font-size: 1.2rem;
+}
+
+#main .content-bottom .download-text .download-text-top h3 span{
+    color: var(--highlight-clr);
+}
+
+#main .content-bottom .download-text .download-text-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1, .dtb2 , .dtb3{
+    padding: 0 3rem;
+    min-width: max-content;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1{
+    padding-left: 0rem;
+}
+
+
+#main .content-bottom .download-text .download-text-bottom .dtb2 {
+    border-left: 1px solid var(--text-white);
+    border-right: 1px solid var(--text-white);
+}
+
+#main .content-bottom .download-text .download-text-bottom h4{
+    font-size: 1.7rem;
+    padding: .4rem 0;
+    color: var(--highlight-clr);
+}
+
+#main .content-bottom .download-text .download-text-bottom p{
+    font-size: 1.2rem;
+}
+
+#main .content-bottom .download-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main .content-bottom .download-links .dl-card{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47%;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 3rem 2rem 0 2rem ;
+    color: var(--text-black);
+}
+
+#main .content-bottom .download-links .dl-card h4{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+#main .content-bottom .download-links .dl-card p{
+    font-size: 1.2rem;
+}
+
+#main .content-bottom .download-links .dl-card button{
+    background-color: var(--highlight-clr);
+    border: none;
+    padding: 1rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    margin:  1.5rem 1rem;
+    width: 12rem;
+    font-size: 1.2rem;
+}
+
+#main .content-bottom .download-links .dl-card button:hover{
+     border: .4rem solid var(--highlight-clr);
+     animation: border 2s ease-in infinite ;
+     transition: 3s ease; 
+}
+
+#main .content-bottom .download-links .dl-card .android-bottom, .ios-bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 115%;
+}
+
+.android-qr , .ios-qr{
+    background-color: #000;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.android-logo , .ios-logo{
+    background-color: var(--secondary-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.android-qr img, .ios-qr img{
+    width: 100%;
+}
+
+
+
+@keyframes border {
+    50%{
+        border: 5px solid rgb(3, 63, 83) ;
+    }
+}
