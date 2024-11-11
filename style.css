@@ -23,7 +23,7 @@ body , html{
 }
 
 #main{
-    padding: 0rem 5rem;
+    padding: 0rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@ body , html{
     align-items: center;
     width: 90%;
     background-color: var(--primary-clr);
-    height: 5rem;
+    height: 3.8rem;
     margin-top: 4rem;
     border-radius: 2.5rem;
     z-index: 9999;
@@ -50,20 +50,21 @@ body , html{
     width: 85%;
     justify-content: flex-start;
     gap: 3em;
+    height: 100%;
 }
 
 #nav .nav-left .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 12%;
+    width: 14%;
 }
 
 #nav .nav-left .logo .logo-image{
     background-color: white;
     margin: .6rem;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -83,8 +84,10 @@ body , html{
 
 #nav .nav-left .nav-list{
     display: flex;
-    width: 60%;
+    width: 80%;
     align-items: center;
+    justify-content: space-between;
+    font-size: .9rem;
 }
 
 #nav .nav-list ul{
@@ -120,6 +123,7 @@ body , html{
     text-decoration: none;
     color: var(--text-white);
     font-weight: 700;
+    font-size: .8rem;
 }
 
 #nav .get-app{
@@ -132,7 +136,7 @@ body , html{
     margin: .6em;
     border-radius: 2.5em;
     color: var(--text-black);
-    animation: border 7s infinite ;
+    animation: border 2s infinite ;
 }
 
 #nav .get-app:hover{
@@ -146,7 +150,7 @@ body , html{
 }
 
 #main .content-top{
-    margin-top: 10rem ;
+    margin-top: 6rem ;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: var(--background);
@@ -164,7 +168,7 @@ body , html{
 #main .content-top #content .sub-head{
     display: flex;
     align-content: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     gap: .5rem;
     padding: 3rem 0;
 }
@@ -172,7 +176,6 @@ body , html{
 #main .content-top #content .sub-head span{
     width: 3rem;
     height: 80%;
-    padding-top: .2rem;
 }
 
 #main .content-top #content .sub-head span img{
@@ -188,7 +191,7 @@ body , html{
 
 #main .content-top #content .main-head h1{
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 #main .content-top #content .main-head h1 span{
@@ -197,8 +200,8 @@ body , html{
 }
 
 #main .content-top #content .para{
-    font-size: 1.2rem;
-    padding: 1rem 0;
+    font-size: .7rem;
+    width: 80%;
 }
 
 #main .content-top #content .dl-btn{
@@ -206,7 +209,7 @@ body , html{
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 #main .content-top #content .dl-btn .btn{
@@ -214,8 +217,8 @@ body , html{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 18rem;
-    height: 4.5rem;
+    width: 12rem;
+    height: 3rem;
     padding: .5rem rem;
     border-radius: .5rem;
     z-index: 3;
@@ -227,8 +230,8 @@ body , html{
 }
 
 #main .content-top #content .dl-btn .btn .app-store-logo, .play-logo{
-    height: 3rem;
-    width: 2.7rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 #main .content-top #content .dl-btn .btn .app-store-text, .play-text{
@@ -241,11 +244,11 @@ body , html{
 }
 
 #main .content-top #content .dl-btn .btn p{
-    font-size: 1rem;
+    font-size: .6rem;
 }
 
 #main .content-top #content .dl-btn .btn h5{
-    font-size: 1.2rem;
+    font-size: .85rem;
 }
 
 #main .content-top #content .dl-btn .google-play-btn{
@@ -261,27 +264,26 @@ body , html{
 #main .content-top #content .testimonial{
     display: flex;
     width: 80%;
-    padding: 2rem 1rem;
+    padding: 1rem;
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
 }
 
-#main .content-top #content .testimonial .img-list ul{
+#main .content-top #content .testimonial .img-list{
     display: grid;
-    list-style: none;
     width: fit-content;
     height: 3rem;
     grid-template-columns: repeat(4,1fr);
 }
 
-#main .content-top #content .testimonial .img-list ul li{
-    width: 6rem ;
-    height: 3rem;
-    margin: -1rem ;
+.img1, .img2, .img3, .img4{
+    width: 3.2rem ;
+    height: 3.2rem;
+    margin: -.5rem ;
 }
 
-#main .content-top #content .testimonial .img-list ul li img{
+.img1 img, .img2 img, .img3 img, .img4 img{
     width: 100%;
 }
 
@@ -293,8 +295,12 @@ body , html{
     gap: .9rem;
 }
 
-#main .content-top #content .testimonial .users h5 ,#main .content-top #content .testimonial .users p{
-    font-size: 1.3rem;
+#main .content-top #content .testimonial .users h5 {
+    font-size: 1rem;
+}
+
+#main .content-top #content .testimonial .users p{
+    font-size: .8rem;
 }
 
 #main .content-top #content .plane{
@@ -302,15 +308,16 @@ width: 17rem;
 height: 30rem;
 transform: rotate(20.002deg);
 position: absolute;
-right: 11rem;
-bottom: -1rem;
+right: 3rem;
+bottom: -5.5rem;
 padding: 0 2rem 0 0rem;
 }
 
 #main .content-top #content .plane img{
-    width: 200%;
+    width: 150%;
     height: 100%;
     transform: rotate(340deg);
+    filter: invert(100%);
 
 }
 
@@ -319,24 +326,31 @@ padding: 0 2rem 0 0rem;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: min-content;
-    padding: 3rem ;
+    height: 100%;
+    position: relative;
 }
 
 #hero .sub-hero{
     position: relative;
     overflow: hidden;
+    width: 15rem;
+    height: 30rem;
+    
 }
 
 #hero .main-hero{
     position: absolute;
-    right: 6rem;
+    right: 0rem;
+    width: 26rem;
+    height: 100%;
+    top: 3rem;
 }
 
 #hero .sub-hero img {
     width: 100%;
-    margin-left: -3px;
+    height: 99%;
     border-radius: 8.3rem;
+    margin-left: -3px;
 }
 
 #hero .main-hero img{
@@ -347,7 +361,7 @@ padding: 0 2rem 0 0rem;
 #main .content-bottom{
     background-color: var(--secondary-clr);
     width: 105%;
-    height: 34rem;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(2,40% 55%);
     padding: 4rem;
@@ -361,7 +375,7 @@ padding: 0 2rem 0 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     color: var(--text-white);
 }
 
@@ -370,12 +384,12 @@ padding: 0 2rem 0 0rem;
 }
 
 #main .content-bottom .download-text .download-text-top h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
 }
 
 #main .content-bottom .download-text .download-text-top p{
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 #main .content-bottom .download-text .download-text-top h3 span{
@@ -386,11 +400,11 @@ padding: 0 2rem 0 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
 }
 
 #main .content-bottom .download-text .download-text-bottom .dtb1, .dtb2 , .dtb3{
-    padding: 0 3rem;
+    padding: 0 2rem;
     min-width: max-content;
 }
 
@@ -405,19 +419,21 @@ padding: 0 2rem 0 0rem;
 }
 
 #main .content-bottom .download-text .download-text-bottom h4{
-    font-size: 1.7rem;
+    font-size: 1rem;
     padding: .4rem 0;
     color: var(--highlight-clr);
 }
 
 #main .content-bottom .download-text .download-text-bottom p{
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 #main .content-bottom .download-links{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-height: inherit;
 }
 
 #main .content-bottom .download-links .dl-card{
@@ -426,43 +442,43 @@ padding: 0 2rem 0 0rem;
     flex-direction: column;
     justify-content: space-between;
     width: 47%;
-    height: 100%;
+    height: 20rem;
     border-radius: 2rem;
     padding: 3rem 2rem 0 2rem ;
     color: var(--text-black);
 }
 
 #main .content-bottom .download-links .dl-card h4{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
 }
 
 #main .content-bottom .download-links .dl-card p{
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 #main .content-bottom .download-links .dl-card button{
     background-color: var(--highlight-clr);
     border: none;
-    padding: 1rem;
+    padding: .7rem;
     font-weight: 700;
     border-radius: 2rem;
     margin:  1.5rem 1rem;
-    width: 12rem;
-    font-size: 1.2rem;
+    width: 10rem;
+    font-size: .8rem;
 }
 
 #main .content-bottom .download-links .dl-card button:hover{
      border: .4rem solid var(--highlight-clr);
-     animation: border 2s ease-in infinite ;
-     transition: 3s ease; 
+     animation: border 2s linear infinite ;
 }
 
 #main .content-bottom .download-links .dl-card .android-bottom, .ios-bottom{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 115%;
+    width: 120%;
+    height: 30%;
 }
 
 .android-qr , .ios-qr{
@@ -471,8 +487,10 @@ padding: 0 2rem 0 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
+    padding: .2rem 0;
     border-radius: .5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .android-logo , .ios-logo{
@@ -482,8 +500,8 @@ padding: 0 2rem 0 0rem;
     justify-content: center;
     padding: 1.4rem;
     border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .android-qr img, .ios-qr img{
