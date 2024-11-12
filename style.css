@@ -11,9 +11,9 @@
   --primary-clr: #644f0e;
   --secondary-clr: #52451e;
   --highlight-clr: #ffc107;
-  --text-black: #ffffff;
+  --text-black: #000000;
   --text-white: #fff;
-  --background: #1d0101;
+  --background: #ffffff;
 }
 
 body,
@@ -257,8 +257,7 @@ html {
 }
 
 #main .content-top #content .dl-btn .btn:hover {
-  border: 0.4rem solid var(--highlight-clr);
-  animation: border 2s ease-in infinite;
+  border: 0.2rem solid var(--highlight-clr);
 }
 
 #main .content-top #content .testimonial {
@@ -323,7 +322,6 @@ html {
   width: 150%;
   height: 100%;
   transform: rotate(340deg);
-  filter: invert(100%);
 }
 
 #main .content-top #hero {
@@ -466,7 +464,7 @@ html {
 #main .content-bottom .download-links .dl-card button {
   background-color: var(--highlight-clr);
   border: none;
-  padding: 0.7rem;
+  padding: 1rem;
   font-weight: 700;
   border-radius: 2rem;
   margin: 1.5rem 1rem;
@@ -476,7 +474,6 @@ html {
 
 #main .content-bottom .download-links .dl-card button:hover {
   border: 0.4rem solid var(--highlight-clr);
-  animation: border 2s linear infinite;
 }
 
 #main .content-bottom .download-links .dl-card .android-bottom,
@@ -495,10 +492,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.2rem 0;
-  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  border-radius: 0.1rem;
   width: 4rem;
-  height: 4rem;
+  height: 4.5rem;
 }
 
 .android-logo,
@@ -509,13 +506,13 @@ html {
   justify-content: center;
   padding: 1.4rem;
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .android-qr img,
 .ios-qr img {
-  width: 100%;
+  width: 95%;
 }
 
 @keyframes border {
