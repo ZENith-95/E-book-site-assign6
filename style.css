@@ -19,6 +19,8 @@
 body,
 html {
   background-color: var(--background);
+  width: 100%;
+  background-color: rgb(17, 83, 83);
 }
 
 #main {
@@ -31,17 +33,29 @@ html {
   min-height: 100vh;
 }
 
+#main #nav-main{
+   position: fixed;
+   width: 100%;
+   display: flex;
+   align-items: baseline;
+   background-color: var(--background);
+   justify-content: center;
+   z-index: 9999;
+}
+
+
+
 #main #nav {
-  position: fixed;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   background-color: var(--primary-clr);
-  height: 3.8rem;
-  margin-top: 4rem;
+  height: 3.5rem;
+  margin-top: 3rem;
   border-radius: 2.5rem;
-  z-index: 9999;
+  
 }
 
 #nav .nav-left {
@@ -56,7 +70,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 14%;
+  width: 10rem
 }
 
 #nav .nav-left .logo .logo-image {
@@ -116,6 +130,7 @@ html {
 #nav .nav-list ul li:first-child {
   border-bottom: 4px solid var(--highlight-clr);
   border-radius: 2px;
+  color: var(--highlight-clr);
 }
 
 #nav .nav-list ul li a {
@@ -125,17 +140,65 @@ html {
   font-size: 0.8rem;
 }
 
+#nav .nav-list .sidebar{
+  display: inline-block;
+  background-color: var(--primary-clr);
+  height: 70vh;
+  width: 18rem;
+  border-radius: 0 0 1rem 1rem;
+  position: fixed;
+  top:4.2rem;
+  right: 0rem;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+#nav .nav-list .sidebar li{
+  width: 70%;
+  height: fit-content;
+  
+}
+
+#nav .nav-list .sidebar li:first-child{
+  align-self: flex-end;
+  border: none;
+  width: 30%;
+  padding: 0;
+}
+
+#nav .nav-list .sidebar li:nth-child(2){
+   border-bottom: 4px solid var(--highlight-clr);
+  border-radius: 2px;
+  color: var(--highlight-clr);
+}
+
+#nav .hamburger{
+  height: 1.5rem;
+  width: 1.5rem;
+  align-self: center;
+  display: none;
+  
+}
+
+#nav .hamburger img{
+  color: #fff;
+  width: 100%;
+  filter: invert(100);
+}
+
 #nav .get-app {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--background);
-  height: 70%;
-  width: 10%;
+  height: 80%;
+  width: 9.5rem;
   margin: 0.6em;
   border-radius: 2.5em;
   color: var(--text-black);
   animation: border 2s infinite;
+  font-size: 75%;
 }
 
 #nav .get-app:hover {
@@ -146,6 +209,7 @@ html {
   color: var(--text-black);
   text-decoration: none;
   font-weight: 700;
+
 }
 
 #main .content-top {
@@ -183,9 +247,9 @@ html {
 }
 
 #main .content-top #content .main-head {
-  width: 100%;
+  width: 80%;
   height: fit-content;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 #main .content-top #content .main-head h1 {
@@ -206,9 +270,9 @@ html {
 #main .content-top #content .dl-btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 80%;
   padding: 3rem 0;
+  gap: 4rem;
 }
 
 #main .content-top #content .dl-btn .btn {
@@ -216,16 +280,17 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 12rem;
+  width: 11rem;
   height: 3rem;
   padding: 0.5rem rem;
   border-radius: 0.5rem;
   z-index: 3;
+  gap: .2em;
 }
 
 #main .content-top #content .dl-btn .btn img {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
 }
 
 #main .content-top #content .dl-btn .btn .app-store-logo,
@@ -245,7 +310,7 @@ html {
 }
 
 #main .content-top #content .dl-btn .btn p {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
 }
 
 #main .content-top #content .dl-btn .btn h5 {
@@ -258,6 +323,7 @@ html {
 
 #main .content-top #content .dl-btn .btn:hover {
   border: 0.2rem solid var(--highlight-clr);
+  cursor: pointer;
 }
 
 #main .content-top #content .testimonial {
@@ -313,7 +379,7 @@ html {
   height: 30rem;
   transform: rotate(20.002deg);
   position: absolute;
-  right: 4rem;
+  right: 6rem;
   bottom: -5.5rem;
   padding: 0 2rem 0 0rem;
 }
@@ -322,6 +388,7 @@ html {
   width: 150%;
   height: 100%;
   transform: rotate(340deg);
+  filter: saturate(100);
 }
 
 #main .content-top #hero {
@@ -334,37 +401,29 @@ html {
 }
 
 #hero .sub-hero {
+  background: url(./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0\ \(1\)\ 1.jpg) center no-repeat ;
+  background-size:  contain;
   position: relative;
   overflow: hidden;
-  width: 19rem;
-  height: 31rem;
-  padding-left: 4rem;
+  width: 55%;
+  height: 80%;
 }
 
 #hero .main-hero {
+  background: url(./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0\ \(1\)\ 2.jpg)center no-repeat;
+  background-size: contain;
   position: absolute;
   right: 0rem;
-  width: 27rem;
-  height: 90%;
-  top: 3rem;
+  width: 80%;
+  height: 100%;
+  border-radius: 1rem;
 }
 
-#hero .sub-hero img {
-  width: 100%;
-  height: 99%;
-  border-radius: 8.3rem;
-  margin-left: -3px;
-}
-
-#hero .main-hero img {
-  width: 100%;
-  border-radius: 2.5rem;
-}
 
 #main .content-bottom {
   background-color: var(--secondary-clr);
-  width: 105%;
-  height: fit-content;
+  width: 103%;
+  height: 26rem;
   display: grid;
   grid-template-columns: repeat(2, 40% 55%);
   padding: 4rem;
@@ -378,7 +437,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   color: var(--text-white);
 }
 
@@ -404,22 +463,25 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 1rem;
 }
 
 #main .content-bottom .download-text .download-text-bottom .dtb1,
 .dtb2,
 .dtb3 {
-  padding: 0 2rem;
-  min-width: max-content;
+  padding: 0 1rem;
+  width: 90%;
 }
 
 #main .content-bottom .download-text .download-text-bottom .dtb1 {
   padding-left: 0rem;
+  width: 150%;
 }
 
 #main .content-bottom .download-text .download-text-bottom .dtb2 {
   border-left: 1px solid var(--text-white);
   border-right: 1px solid var(--text-white);
+  width: 60%;
 }
 
 #main .content-bottom .download-text .download-text-bottom h4 {
@@ -429,7 +491,7 @@ html {
 }
 
 #main .content-bottom .download-text .download-text-bottom p {
-  font-size: 0.8rem;
+  font-size: 88%;
 }
 
 #main .content-bottom .download-links {
@@ -445,9 +507,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 47%;
-  height: 20rem;
-  border-radius: 2rem;
+  width: 45%;
+  height: 100%;
+  border-radius: 2.5rem;
   padding: 3rem 2rem 0 2rem;
   color: var(--text-black);
 }
@@ -466,14 +528,16 @@ html {
   border: none;
   padding: 1rem;
   font-weight: 700;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   margin: 1.5rem 1rem;
-  width: 10rem;
-  font-size: 0.8rem;
+  max-width: 10rem,80%;
+  font-size: 90%;
+  cursor: pointer;
+  box-shadow: 2px 2px gray;
 }
 
 #main .content-bottom .download-links .dl-card button:hover {
-  border: 0.4rem solid var(--highlight-clr);
+  background-color: #644f0e;
 }
 
 #main .content-bottom .download-links .dl-card .android-bottom,
@@ -481,7 +545,7 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 120%;
+  width: 117%;
   height: 30%;
 }
 
@@ -492,10 +556,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0;
   border-radius: 0.1rem;
   width: 4rem;
   height: 4.5rem;
+  border-radius: .4rem;
 }
 
 .android-logo,
@@ -504,19 +568,967 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.4rem;
+  padding: 1rem;
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
+  border: .4rem solid var(--secondary-clr);
 }
 
 .android-qr img,
 .ios-qr img {
-  width: 95%;
+  width: 70%;
 }
+
+.android-logo img,
+.ios-logo img{
+  width: 100%;
+}
+
 
 @keyframes border {
   50% {
-    border: 5px solid rgb(3, 63, 83);
+    border: 4px solid rgb(1, 179, 238);
   }
+}
+
+
+/* Media Queries  */
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #main{
+    padding: 0rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #main #nav-main {
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  #main #nav{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #main #nav .nav-left {
+    width: 70%;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+   #main #nav .get-app{
+    width: 30%;
+    font-size: 70%;
+   }
+
+
+  #main .content-top #content{
+    padding: 0;
+  }
+
+    #nav .nav-list{
+      display: none;
+    }
+  
+  #nav .nav-list ul{
+    display: none;
+  }
+
+  #nav .hamburger{
+    display: flex;
+    justify-self: flex-start;
+    width: 55px;
+    height: 50%;
+  }
+
+#main .content-top{
+  display: flex;
+  margin: 0;
+  background: url(./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0\ \(1\)\ 2.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 2rem;
+  height: 26rem;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+  justify-content: center;
+  
+}
+
+#main .content-top::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000057;
+  left: 0;
+  top: 0;
+  border-radius: 2rem;
+}
+
+#main .content-top #content{
+  width: 100%;
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+}
+
+#main .content-top #content .sub-head{
+  font-size: 69%;
+  width: 100%;
+  align-items: center;
+  width: 90%;
+  padding-top: 1rem;
+}
+
+#main .content-top #content .sub-head span{
+  width: 2.2em;
+  height: .9em;
+}
+
+#main .content-top #content .main-head{
+  width: 100%;
+}
+
+#main .content-top #content .main-head h1{
+  font-size: 1.7em;
+  
+}
+
+#main .content-top #content .para{
+  font-size: .5rem;
+  padding:0 0 1rem 0;
+}
+
+#main .content-top #content .dl-btn{
+  padding:0;
+  gap: 1rem;
+  width: fit-content;
+}
+
+#main .content-top #content .dl-btn .btn{
+  width: 8.65rem;
+  padding: .5rem;
+}
+
+
+
+#main .content-top #content .testimonial{
+  padding:2em 0 0 .5em;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#main .content-top #content .testimonial .users{
+  width: 6rem;
+  justify-self: start;
+  margin-left: 0;
+}
+
+#main .content-top #content .testimonial .users h5 {
+  font-size: .9rem;
+}
+
+#main .content-top #content .testimonial .users p {
+  font-size: 0.4rem;
+}
+
+#main .content-top #content .plane{
+  width: 10rem;
+  height: 19rem;
+  left: 3rem;
+  top: 5.5rem;
+  padding: 0;
+}
+
+#main .content-top #content .plane img{
+  filter: invert(100);
+  width: 150%;
+}
+
+#main .content-top #hero{
+  display: none;
+}
+
+#main .content-bottom{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  height: fit-content;
+}
+
+#main .content-bottom .download-text .download-text-top p {
+  font-size: .7rem;
+  padding-bottom: 3rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 h4 , #main .content-bottom .download-text .download-text-bottom .dtb2 h4, #main .content-bottom .download-text .download-text-bottom .dtb3 h4{
+  font-size: .8rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 p , #main .content-bottom .download-text .download-text-bottom .dtb2 p, #main .content-bottom .download-text .download-text-bottom .dtb3 p{
+  font-size: .46rem;
+}
+
+#main .content-bottom .download-links{
+  padding: 2rem 0;
+  flex-direction: column;
+}
+
+#main .content-bottom .download-links .dl-card{
+  height: fit-content;
+  padding: 1rem 0 .5rem 1rem;
+  width: 60%;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+#main .content-bottom .download-links .dl-card h4 {
+  font-size: .9rem;
+  padding: .5rem 0;
+}
+
+#main .content-bottom .download-links .dl-card p {
+  font-size: 0.7rem;
+}
+
+
+#main .content-bottom .download-links .dl-card button {
+  font-size: 80%;
+  height: 2.5rem;
+  padding: .5rem;
+  max-width: 5rem, 60%;
+}
+
+
+#main .content-bottom .download-links .dl-card .android-bottom,
+.ios-bottom{
+  width: 105%;
+  margin-bottom: -1rem; 
+}
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    #main{
+    padding: 0rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #main #nav-main {
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  #main #nav{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #main #nav .nav-left {
+    width: 70%;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+   #main #nav .get-app{
+    width: 20%;
+    font-size: 90%;
+   }
+
+
+  #main .content-top #content{
+    padding: 0;
+  }
+
+    #nav .nav-list{
+      display: none;
+    }
+  
+  #nav .nav-list ul{
+    display: none;
+  }
+
+  #nav .hamburger{
+    display: flex;
+    justify-self: flex-start;
+    width: 30px;
+    height: 30px;
+  }
+
+#main .content-top{
+  display: flex;
+  margin: 0;
+  background: url(./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0\ \(1\)\ 2.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 2rem;
+  height: fit-content;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+  justify-content: center;
+  
+}
+
+#main .content-top::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000057;
+  left: 0;
+  top: 0;
+  border-radius: 2rem;
+}
+
+#main .content-top #content{
+  width: 100%;
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+}
+
+#main .content-top #content .sub-head{
+  font-size: 99%;
+  width: 100%;
+  align-items: center;
+  width: 90%;
+  padding-top: 1rem;
+}
+
+#main .content-top #content .sub-head span{
+  width: 2.2em;
+  height: .9em;
+}
+
+#main .content-top #content .main-head{
+  width: 100%;
+}
+
+#main .content-top #content .main-head h1{
+  font-size: 2.5em;
+  
+}
+
+#main .content-top #content .para{
+  font-size: .8rem;
+  padding:0 0 1rem 0;
+  width: 69%;
+}
+
+#main .content-top #content .dl-btn{
+  padding:0;
+  gap: 1rem;
+  width: fit-content;
+}
+
+#main .content-top #content .dl-btn .btn{
+  width: 9.65rem;
+  padding: .5rem;
+}
+
+
+
+#main .content-top #content .testimonial{
+  padding:2em 0 0 .5em;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#main .content-top #content .testimonial .users{
+  width: 6rem;
+  justify-self: start;
+  margin-left: 0;
+}
+
+#main .content-top #content .testimonial .users h5 {
+  font-size: .9rem;
+}
+
+#main .content-top #content .testimonial .users p {
+  font-size: 0.5rem;
+}
+
+#main .content-top #content .plane{
+  width: 10rem;
+  height: 19rem;
+  left: 3rem;
+  top: 5.5rem;
+  padding: 0;
+}
+
+#main .content-top #content .plane img{
+  filter: invert(100);
+  width: 150%;
+}
+
+#main .content-top #hero{
+  display: none;
+}
+
+#main .content-bottom{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  height: fit-content;
+}
+
+#main .content-bottom .download-text .download-text-top p {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 h4 , #main .content-bottom .download-text .download-text-bottom .dtb2 h4, #main .content-bottom .download-text .download-text-bottom .dtb3 h4{
+  font-size: 1.5rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 p , #main .content-bottom .download-text .download-text-bottom .dtb2 p, #main .content-bottom .download-text .download-text-bottom .dtb3 p{
+  font-size: .96rem;
+}
+
+#main .content-bottom .download-links{
+  padding: 2rem 0;
+  justify-content: space-evenly;
+}
+
+#main .content-bottom .download-links .dl-card{
+  height: 14rem;
+  padding: 1rem 0 .5rem 1rem;
+  width: 40%;
+  margin: 1rem;
+}
+
+#main .content-bottom .download-links .dl-card h4 {
+  font-size: 1.2rem;
+  padding: .5rem 0;
+}
+
+#main .content-bottom .download-links .dl-card p {
+  font-size: 0.9rem;
+}
+
+
+#main .content-bottom .download-links .dl-card button {
+  font-size: 80%;      
+  height: 2.5rem;
+  padding: .5rem;
+  width: 10em;
+  margin-bottom: 3rem;
+}
+
+#main .content-bottom .download-links .dl-card .android-bottom,
+.ios-bottom{
+  width: 103%;
+}
+
+  }
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    #main{
+    padding: 0rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #main #nav-main {
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  #main #nav{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #main #nav .nav-left {
+    width: 70%;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+   #main #nav .get-app{
+    width: 20%;
+    font-size: 90%;
+   }
+
+
+  #main .content-top #content{
+    padding: 0;
+  }
+
+    #nav .nav-list{
+      display: none;
+    }
+  
+  #nav .nav-list ul{
+    display: none;
+  }
+
+  #nav .hamburger{
+    display: flex;
+    justify-self: flex-start;
+    width: 30px;
+    height: 30px;
+  }
+
+#main .content-top{
+  display: flex;
+  margin: 0;
+  background: url(./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0\ \(1\)\ 2.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 2rem;
+  height: fit-content;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+  justify-content: center;
+  
+}
+
+#main .content-top::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000057;
+  left: 0;
+  top: 0;
+  border-radius: 2rem;
+}
+
+#main .content-top #content{
+  width: 100%;
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+}
+
+#main .content-top #content .sub-head{
+  font-size: 99%;
+  width: 100%;
+  align-items: center;
+  width: 90%;
+  padding-top: 1rem;
+}
+
+#main .content-top #content .sub-head span{
+  width: 2.2em;
+  height: .9em;
+}
+
+#main .content-top #content .main-head{
+  width: 100%;
+}
+
+#main .content-top #content .main-head h1{
+  font-size: 3em;
+  
+}
+
+#main .content-top #content .para{
+  font-size: .8rem;
+  padding:0 0 1rem 0;
+  width: 69%;
+}
+
+#main .content-top #content .dl-btn{
+  padding:2rem 0;
+  gap: 1rem;
+  width: fit-content;
+}
+
+#main .content-top #content .dl-btn .btn{
+  width: 9.65rem;
+  padding: .5rem;
+}
+
+
+
+#main .content-top #content .testimonial{
+  padding:3em 0 0 .5em;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#main .content-top #content .testimonial .users{
+  width: 6rem;
+  justify-self: start;
+  margin-left: 0;
+}
+
+#main .content-top #content .testimonial .users h5 {
+  font-size: .9rem;
+}
+
+#main .content-top #content .testimonial .users p {
+  font-size: 0.5rem;
+}
+
+#main .content-top #content .plane{
+  width: 10rem;
+  height: 19rem;
+  left: 3rem;
+  top: 5.5rem;
+  padding: 0;
+}
+
+#main .content-top #content .plane img{
+  filter: invert(100);
+  width: 150%;
+}
+
+#main .content-top #hero{
+  display: none;
+}
+
+#main .content-bottom{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  height: fit-content;
+}
+
+#main .content-bottom .download-text .download-text-top p {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 h4 , #main .content-bottom .download-text .download-text-bottom .dtb2 h4, #main .content-bottom .download-text .download-text-bottom .dtb3 h4{
+  font-size: 1.5rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 p , #main .content-bottom .download-text .download-text-bottom .dtb2 p, #main .content-bottom .download-text .download-text-bottom .dtb3 p{
+  font-size: .96rem;
+}
+
+#main .content-bottom .download-links{
+  padding: 2rem 0;
+  justify-content: space-evenly;
+}
+
+#main .content-bottom .download-links .dl-card{
+  height: 17.5rem;
+  padding: 1rem 0 .5rem 1rem;
+  width: 20em;
+  margin: 1rem;
+}
+
+#main .content-bottom .download-links .dl-card h4 {
+  font-size: 1.6rem;
+  padding: .5rem 0;
+}
+
+#main .content-bottom .download-links .dl-card p {
+  font-size: 1.1rem;
+}
+
+
+#main .content-bottom .download-links .dl-card button {
+  font-size: 100%;      
+  height: 3.5rem;
+  padding: 1rem;
+  width: 10em;
+  margin-bottom: 3rem;
+}
+
+#main .content-bottom .download-links .dl-card .android-bottom,
+.ios-bottom{
+  width: 103%;
+}
+
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+      #main{
+    padding: 0rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #main #nav-main {
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  #main #nav{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #main #nav .nav-left {
+    width: 70%;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+   #main #nav .get-app{
+    width: 20%;
+    font-size: 90%;
+   }
+
+
+  #main .content-top #content{
+    padding: 0;
+  }
+
+    #nav .nav-list{
+      display: none;
+    }
+  
+  #nav .nav-list ul{
+    display: none;
+  }
+
+  #nav .hamburger{
+    display: flex;
+    justify-self: flex-start;
+    width: 30px;
+    height: 30px;
+  }
+
+#main .content-top{
+  display: flex;
+  margin: 0;
+  background: url(./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0\ \(1\)\ 2.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 2rem;
+  height: fit-content;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+  justify-content: center;
+  
+}
+
+#main .content-top::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000057;
+  left: 0;
+  top: 0;
+  border-radius: 2rem;
+}
+
+#main .content-top #content{
+  width: 100%;
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+}
+
+#main .content-top #content .sub-head{
+  font-size: 99%;
+  width: 100%;
+  align-items: center;
+  width: 90%;
+  padding-top: 1rem;
+}
+
+#main .content-top #content .sub-head span{
+  width: 2.2em;
+  height: .9em;
+}
+
+#main .content-top #content .main-head{
+  width: 100%;
+}
+
+#main .content-top #content .main-head h1{
+  font-size: 3em;
+  
+}
+
+#main .content-top #content .para{
+  font-size: .8rem;
+  padding:0 0 1rem 0;
+  width: 69%;
+}
+
+#main .content-top #content .dl-btn{
+  padding:2rem 0;
+  gap: 1rem;
+  width: fit-content;
+}
+
+#main .content-top #content .dl-btn .btn{
+  width: 9.65rem;
+  padding: .5rem;
+}
+
+
+
+#main .content-top #content .testimonial{
+  padding:3em 0 0 .5em;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#main .content-top #content .testimonial .users{
+  width: 6rem;
+  justify-self: start;
+  margin-left: 0;
+}
+
+#main .content-top #content .testimonial .users h5 {
+  font-size: .9rem;
+}
+
+#main .content-top #content .testimonial .users p {
+  font-size: 0.5rem;
+}
+
+#main .content-top #content .plane{
+  width: 10rem;
+  height: 19rem;
+  left: 3rem;
+  top: 5.5rem;
+  padding: 0;
+}
+
+#main .content-top #content .plane img{
+  filter: invert(100);
+  width: 150%;
+}
+
+#main .content-top #hero{
+  display: none;
+}
+
+#main .content-bottom{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  height: fit-content;
+}
+
+#main .content-bottom .download-text .download-text-top p {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 h4 , #main .content-bottom .download-text .download-text-bottom .dtb2 h4, #main .content-bottom .download-text .download-text-bottom .dtb3 h4{
+  font-size: 1.5rem;
+}
+
+#main .content-bottom .download-text .download-text-bottom .dtb1 p , #main .content-bottom .download-text .download-text-bottom .dtb2 p, #main .content-bottom .download-text .download-text-bottom .dtb3 p{
+  font-size: .96rem;
+}
+
+#main .content-bottom .download-links{
+  padding: 2rem 0;
+  justify-content: space-evenly;
+}
+
+#main .content-bottom .download-links .dl-card{
+  height: 17.5rem;
+  padding: 1rem 0 .5rem 1rem;
+  width: 20em;
+  margin: 1rem;
+}
+
+#main .content-bottom .download-links .dl-card h4 {
+  font-size: 1.6rem;
+  padding: .5rem 0;
+}
+
+#main .content-bottom .download-links .dl-card p {
+  font-size: 1.1rem;
+}
+
+
+#main .content-bottom .download-links .dl-card button {
+  font-size: 100%;      
+  height: 3.5rem;
+  padding: 1rem;
+  width: 10em;
+  margin-bottom: 3rem;
+}
+
+#main .content-bottom .download-links .dl-card .android-bottom,
+.ios-bottom{
+  width: 103%;
+}
+
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  #hero .main-hero {
+    background-size: cover;
+    height: 80%;
+  }
+
+   #hero .sub-hero {
+    height: 70%;
+   }
+  
+  
+#main .content-bottom .download-links .dl-card{
+  height: 17.5rem;
+  padding: 1rem 0 .5rem 1rem;
+  width: 20em;
+  margin: 1rem;
+}
+
+#main .content-bottom .download-links .dl-card h4 {
+  font-size: 1.6rem;
+  padding: .5rem 0;
+}
+
+#main .content-bottom .download-links .dl-card p {
+  font-size: 1.1rem;
+}
+
+
+#main .content-bottom .download-links .dl-card button {
+  font-size: 100%;      
+  height: 3.5rem;
+  padding: 1rem;
+  width: 10em;
+  margin-bottom: 3rem;
+}
+
+#main .content-bottom .download-links .dl-card .android-bottom,
+.ios-bottom{
+  width: 103%;
+}
+
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  #main .content-bottom .download-links .dl-card button {
+  font-size: 100%;      
+  height: 3.5rem;
+  padding: 1rem;
+  max-width: (50%, 10em);
+  margin-bottom: 3rem;
+}
+
 }

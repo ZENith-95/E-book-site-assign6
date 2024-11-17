@@ -8,29 +8,42 @@
   </head>
   <body>
     <div id="main">
-      <section id="nav">
-        <div class="nav-left">
-            <div class="logo">
-              <div class="logo-image">
-                <img src="./assets/ebook logo.png" alt="Ebook logo" />
+      <div id="nav-main">
+        <section id="nav">
+          <div class="nav-left">
+              <div class="logo">
+                <div class="logo-image">
+                  <img src="./assets/ebook logo.png" alt="Ebook logo" />
+                </div>
+                <div class="logo-text">Ebook</div>
               </div>
-              <div class="logo-text">Ebook</div>
-            </div>
-            <div class="nav-list">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-        </div>
-        <div class="get-app">
-          <a href="#">Get the App</a>
-        </div>
-      </section>
+              <div class="nav-list">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">How It Works</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonial</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+                 <ul class="sidebar">
+                  <li onclick=hideSidebar() class="close"><img src="assets/icons8-close-24 (1).png" alt=""></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">How It Works</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonial</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+        
+              </div>
+               <div class="hamburger" onclick=showSidebar()><img src="./assets/icons8-books-52.png"></div>
+          </div>
+          <div class="get-app">
+            <a href="#">Get the App</a>
+          </div>
+        </section>
+      </div>
       <div class="content-top">
         <section id="content">
           <div class="sub-head">
@@ -83,14 +96,10 @@
         </section>
         <section id="hero">
           <div class="sub-hero">
-            <img
-              src="./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0 (1) 1.jpg"
-              alt="" />
+            
           </div>
           <div class="main-hero">
-            <img
-              src="./assets/Leonardo_Vision_XL_ebook_and_audiobook_app_mobile_view_0 (1) 2.jpg"
-              alt="" />
+          
           </div>
         </section>
       </div>
@@ -152,5 +161,18 @@
         </div>
       </div>
     </div>
+    <script>
+    
+      function showSidebar(){
+        const sidebar = document.querySelector(".sidebar")
+        sidebar.style.display = "flex"
+      }
+
+       function hideSidebar(){
+        const sidebar = document.querySelector(".sidebar")
+        sidebar.style.display = "none"
+      }
+
+    </script>
   </body>
 </html>
