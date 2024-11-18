@@ -601,9 +601,10 @@ html {
 @media (min-width: 320px) and (max-width: 480px) {
 
   #main{
-    padding: 0rem;
+    padding: 0 1.5rem;
     position: relative;
     overflow: hidden;
+    gap: 1rem;
   }
 
   #main #nav-main {
@@ -611,7 +612,7 @@ html {
   }
 
   #main #nav{
-    width: 100%;
+    width: 90%;
     margin-top: 1rem;
   }
 
@@ -655,7 +656,7 @@ html {
   border-radius: 2rem;
   height: 26rem;
   gap: 2.5rem;
-  margin-top: 4.5rem;
+  margin-top: 5.5rem;
   justify-content: center;
   
 }
@@ -821,9 +822,10 @@ html {
 */
 @media (min-width: 481px) and (max-width: 767px) {
     #main{
-    padding: 0rem;
+    padding: 0 1.5rem;
     position: relative;
     overflow: hidden;
+    gap: 1rem;
   }
 
   #main #nav-main {
@@ -831,7 +833,7 @@ html {
   }
 
   #main #nav{
-    width: 100%;
+    width: 90%;
     margin-top: 1rem;
   }
 
@@ -875,7 +877,7 @@ html {
   border-radius: 2rem;
   height: fit-content;
   gap: 2.5rem;
-  margin-top: 4.5rem;
+  margin-top: 5.5rem;
   justify-content: center;
   
 }
@@ -1039,9 +1041,10 @@ html {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
     #main{
-    padding: 0rem;
+    padding: 0 1.5rem;
     position: relative;
     overflow: hidden;
+    gap: 1rem;
   }
 
   #main #nav-main {
@@ -1049,7 +1052,7 @@ html {
   }
 
   #main #nav{
-    width: 100%;
+    width: 95%;
     margin-top: 1rem;
   }
 
@@ -1093,7 +1096,7 @@ html {
   border-radius: 2rem;
   height: fit-content;
   gap: 2.5rem;
-  margin-top: 4.5rem;
+  margin-top: 5.5rem;
   justify-content: center;
   
 }
@@ -1259,7 +1262,7 @@ html {
 @media (min-width: 768px) and (max-width: 1024px) {
   
       #main{
-    padding: 0rem;
+    padding: 0 1.5rem;
     position: relative;
     overflow: hidden;
   }
@@ -1269,7 +1272,7 @@ html {
   }
 
   #main #nav{
-    width: 100%;
+    width: 95%;
     margin-top: 1rem;
   }
 
@@ -1313,7 +1316,7 @@ html {
   border-radius: 2rem;
   height: fit-content;
   gap: 2.5rem;
-  margin-top: 4.5rem;
+  margin-top: 5.5rem;
   justify-content: center;
   
 }
