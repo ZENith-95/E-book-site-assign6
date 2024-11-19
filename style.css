@@ -617,14 +617,13 @@ html {
   }
 
   #main #nav .nav-left {
-    width: 70%;
+    width: 94%;
     justify-content: flex-start;
     gap: 0;
   }
 
    #main #nav .get-app{
-    width: 30%;
-    font-size: 70%;
+    display: none;
    }
 
 
@@ -642,9 +641,8 @@ html {
 
   #nav .hamburger{
     display: flex;
-    justify-self: flex-start;
-    width: 55px;
-    height: 50%;
+    width: 35px;
+    height: 30px;
   }
 
 #main .content-top{
@@ -654,7 +652,7 @@ html {
   background-size: cover;
   position: relative;
   border-radius: 2rem;
-  height: 26rem;
+  min-height: 26rem;
   gap: 2.5rem;
   margin-top: 5.5rem;
   justify-content: center;
@@ -666,7 +664,7 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #00000057;
+  background-color: #000000c5;
   left: 0;
   top: 0;
   border-radius: 2rem;
@@ -680,7 +678,7 @@ html {
 }
 
 #main .content-top #content .sub-head{
-  font-size: 69%;
+  font-size: 56%;
   width: 100%;
   align-items: center;
   width: 90%;
@@ -697,7 +695,7 @@ html {
 }
 
 #main .content-top #content .main-head h1{
-  font-size: 1.7em;
+  font-size: 1.6em;
   
 }
 
@@ -710,6 +708,7 @@ html {
   padding:0;
   gap: 1rem;
   width: fit-content;
+  flex-direction: column;
 }
 
 #main .content-top #content .dl-btn .btn{
@@ -724,6 +723,17 @@ html {
   width: 100%;
   justify-content: flex-start;
 }
+
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: -0.5rem;
+}
+
 
 #main .content-top #content .testimonial .users{
   width: 6rem;
@@ -784,7 +794,8 @@ html {
 #main .content-bottom .download-links .dl-card{
   height: fit-content;
   padding: 1rem 0 .5rem 1rem;
-  width: 60%;
+  width: 85%;
+  max-width: 16rem;
   gap: 1rem;
   margin: 2rem;
 }
@@ -838,14 +849,13 @@ html {
   }
 
   #main #nav .nav-left {
-    width: 70%;
+    width: 95%;
     justify-content: flex-start;
     gap: 0;
   }
 
    #main #nav .get-app{
-    width: 20%;
-    font-size: 90%;
+    display: none;
    }
 
 
@@ -887,7 +897,7 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #00000057;
+  background-color: #000000b2;
   left: 0;
   top: 0;
   border-radius: 2rem;
@@ -901,7 +911,7 @@ html {
 }
 
 #main .content-top #content .sub-head{
-  font-size: 99%;
+  font-size: 96%;
   width: 100%;
   align-items: center;
   width: 90%;
@@ -918,12 +928,12 @@ html {
 }
 
 #main .content-top #content .main-head h1{
-  font-size: 2.5em;
+  font-size: 2.2em;
   
 }
 
 #main .content-top #content .para{
-  font-size: .8rem;
+  font-size: .7rem;
   padding:0 0 1rem 0;
   width: 69%;
 }
@@ -945,6 +955,16 @@ html {
   padding:2em 0 0 .5em;
   width: 100%;
   justify-content: flex-start;
+}
+
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 3rem;
+  height: 2.9rem;
+  margin: -0.5rem;
 }
 
 #main .content-top #content .testimonial .users{
@@ -986,16 +1006,16 @@ html {
 }
 
 #main .content-bottom .download-text .download-text-top p {
-  font-size: 1rem;
+  font-size: .8rem;
   padding-bottom: 3rem;
 }
 
 #main .content-bottom .download-text .download-text-bottom .dtb1 h4 , #main .content-bottom .download-text .download-text-bottom .dtb2 h4, #main .content-bottom .download-text .download-text-bottom .dtb3 h4{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #main .content-bottom .download-text .download-text-bottom .dtb1 p , #main .content-bottom .download-text .download-text-bottom .dtb2 p, #main .content-bottom .download-text .download-text-bottom .dtb3 p{
-  font-size: .96rem;
+  font-size: .8rem;
 }
 
 #main .content-bottom .download-links{
@@ -1006,24 +1026,24 @@ html {
 #main .content-bottom .download-links .dl-card{
   height: 14rem;
   padding: 1rem 0 .5rem 1rem;
-  width: 40%;
-  margin: 1rem;
+  width: 45%;
+  max-width: 14rem;
 }
 
 #main .content-bottom .download-links .dl-card h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: .5rem 0;
 }
 
 #main .content-bottom .download-links .dl-card p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 
 #main .content-bottom .download-links .dl-card button {
   font-size: 80%;      
-  height: 2.5rem;
-  padding: .5rem;
+  height: 2.7rem;
+  padding: .7rem;
   width: 10em;
   margin-bottom: 3rem;
 }
@@ -1057,14 +1077,13 @@ html {
   }
 
   #main #nav .nav-left {
-    width: 70%;
+    width: 100%;
     justify-content: flex-start;
     gap: 0;
   }
 
    #main #nav .get-app{
-    width: 20%;
-    font-size: 90%;
+    display: none;
    }
 
 
@@ -1166,6 +1185,8 @@ html {
   justify-content: flex-start;
 }
 
+
+
 #main .content-top #content .testimonial .users{
   width: 6rem;
   justify-self: start;
@@ -1265,6 +1286,7 @@ html {
     padding: 0 1.5rem;
     position: relative;
     overflow: hidden;
+    gap: 1rem;
   }
 
   #main #nav-main {
@@ -1277,14 +1299,13 @@ html {
   }
 
   #main #nav .nav-left {
-    width: 70%;
+    width: 97%;
     justify-content: flex-start;
     gap: 0;
   }
 
    #main #nav .get-app{
-    width: 20%;
-    font-size: 90%;
+    display: none;
    }
 
 
@@ -1314,7 +1335,7 @@ html {
   background-size: cover;
   position: relative;
   border-radius: 2rem;
-  height: fit-content;
+  min-height: 27rem;
   gap: 2.5rem;
   margin-top: 5.5rem;
   justify-content: center;
@@ -1326,7 +1347,7 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #00000057;
+  background-color: #000000c2;
   left: 0;
   top: 0;
   border-radius: 2rem;
@@ -1532,6 +1553,9 @@ html {
   padding: 1rem;
   max-width: (50%, 10em);
   margin-bottom: 3rem;
+}
+#main .content-bottom .download-links .dl-card{
+  max-width: 21rem;
 }
 
 }
